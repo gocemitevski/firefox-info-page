@@ -1,4 +1,4 @@
-firefox-info-page
-=================
+Firefox Page Info Design Prototype
+==================================
 
-Prototype of a Firefox Info Page for Developer Tools
+Design prototype of a Firefox Page Info section for Developer Tools. Project initiated by Paul Rouget of Mozilla.
