@@ -5,30 +5,44 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/fonts.css" rel="stylesheet" media="screen">
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		<div class="data-sections">
-			<header>
-				<h1>Page title goes here...</h1>
+			<header id="main_header">
+				<h1>Page Title Here ...</h1>
 				<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
-			</header>
-			<section id="timeline" class="full-width">
-				<h2>Page loaded in <strong>5563</strong> milliseconds <a class="data-tool-link" href="#" title="See more in Developer Tools > Network">Network</a></h2>
-				<div class="data-timeline">
-					<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
-					<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
-					<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
-					<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
-					<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
-					<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
-					<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
-					<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+				<div class="data-buttons">
+					<button type="button">Refresh</button>
+					<button type="button">Export</button>
 				</div>
-			</section>
+			</header>
+			
 			<div class="full-width">
-				<section id="general" class="data-group-small">
-					<h2>General</h2>
+				<section id="timeline" class="data-group">
+						<header>
+							<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
+							<button type="button" title="See more in Developer Tools > Network">Network</button>
+						</header>
+						<div class="data-timeline">
+							<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
+							<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
+							<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
+							<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
+							<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
+							<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
+							<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
+							<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+						</div>
+				</section>
+			</div>
+			
+			<div class="full-width">
+				<section id="general" class="data-group data-group-small">
+					<header>
+						<h2>General</h2>
+					</header>
 					<div class="data-group">
 						<figure>
 							<span class="glyphicon glyphicon-encoding"></span>
@@ -64,8 +78,11 @@
 						</dl>
 					</div>
 				</section>
-				<section id="page-resources" class="data-group-medium">
-					<h2>Page Resources <a class="data-tool-link" href="#" title="See more in Developer Tools > Style Editor">Style Editor</a></h2>
+				<section id="page-resources" class="data-group data-group-medium">
+					<header>
+						<h2>Page Resources</h2>
+						<button type="button" title="See more in Developer Tools > Style Editor">Style Editor</button>
+					</header>
 					<div class="data-group">
 						<figure>
 							<span class="glyphicon glyphicon-pencil"></span>
@@ -119,8 +136,11 @@
 						</dl>
 					</div>
 				</section>
-				<section id="troubleshooting" class="data-group-medium">
-					<h2>Troubleshooting <a class="data-tool-link" href="#" title="See more in Developer Tools > Web Console">Web Console</a></h2>
+				<section id="troubleshooting" class="data-group data-group-medium">
+					<header>
+						<h2>Troubleshooting</h2>
+						<button type="button" title="See more in Developer Tools > Web Console">Web Console</button>
+					</header>
 					<div class="data-group alert-danger">
 						<figure>
 							<span class="glyphicon glyphicon-minus-sign"></span>
@@ -154,8 +174,10 @@
 				</section>
 			</div>
 			<div class="full-width">
-				<section id="security" class="data-group-large">
-					<h2>Security</h2>
+				<section id="security" class="data-group data-group-large">
+					<header>
+						<h2>Security</h2>
+					</header>
 					<div class="data-group alert-success">
 						<figure>
 							<span class="glyphicon glyphicon-lock"></span>
@@ -207,8 +229,10 @@
 						</dl>
 					</div>
 				</section>
-				<section id="colors" class="data-group-small">
-					<h2>Colors</h2>
+				<section id="colors" class="data-group data-group-small">
+					<header>
+						<h2>Colors</h2>
+					</header>
 					<div class="data-group">
 						<figure>
 							<span class="glyphicon glyphicon-picture"></span>
@@ -231,8 +255,11 @@
 				</section>
 			</div>
 			<div class="full-width">
-				<section id="display" class="data-group-medium">
-					<h2>Display <a class="data-tool-link" href="#" title="See more in Developer Tools > Tool Name">Tool Name</a></h2>
+				<section id="display" class="data-group data-group-medium">
+					<header>
+						<h2>Display</h2>
+						<button type="button" title="See more in Developer Tools > Tool Name">Tool Name</button>
+					</header>
 					<div class="data-group v-b-container">
 						<div class="visual-box">
 							<div class="arrow arrow-down"></div>
@@ -278,8 +305,10 @@
 						</dl>
 					</div>
 				</section>
-				<section id="viewport" class="data-group-medium">
-					<h2>Viewport</h2>
+				<section id="viewport" class="data-group data-group-medium">
+					<header>
+						<h2>Viewport</h2>
+					</header>
 					<div class="data-group v-b-container">
 						<div class="visual-box">
 							<div class="arrow arrow-left"></div>
