@@ -87,7 +87,7 @@ body {
 	font-size: 1.313rem;
 }
 .data-group header{
-	padding: 1.5rem 2.25rem;
+	padding: 1.313rem 2.25rem;
 	margin:0 0 2.25rem;
 	background: #667380;
 	color: #fff;
@@ -157,7 +157,7 @@ body {
 }
 .data-sections h2{
 	font-family: inherit;
-	font-size:2.571rem;
+	font-size: 2.25rem;
 	font-weight: 400;
 	line-height: inherit;
 }
