@@ -18,358 +18,377 @@
 					<button type="button">Export</button>
 				</div>
 			</header>
-			<div class="full-width">
-				<section id="timeline" class="data-group">
-						<header>
-							<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
-							<button type="button" title="See more in Developer Tools > Network">Network</button>
-						</header>
-						<div class="data-timeline">
-							<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
-							<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
-							<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
-							<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
-							<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
-							<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
-							<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
-							<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
-						</div>
+			<div class="row">
+				<section id="timeline" class="data-group col-lg-12">
+					<header>
+						<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
+						<button type="button" title="See more in Developer Tools > Network">Network</button>
+					</header>
+					<div class="data-timeline">
+						<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
+						<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
+						<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
+						<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
+						<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
+						<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
+						<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
+						<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+					</div>
 				</section>
 			</div>
-			<div class="full-width">
-				<section id="general" class="data-group data-group-small">
+			<div class="row">
+				<section id="general" class="data-group col-lg-4">
 					<header>
 						<h2>General</h2>
 					</header>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-encoding"></span>
-						</figure>
-						<dl>
-							<dt>Encoding</dt>
-							<!--<dd>Page character encoding</dd>-->
-							<dd class="big-value">UTF-8</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6">
+							<figure>
+								<span class="glyphicon glyphicon-encoding"></span>
+							</figure>
+							<dl>
+								<dt>Encoding</dt>
+								<!--<dd>Page character encoding</dd>-->
+								<dd class="big-value">UTF-8</dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-6">
+							<figure>
+								<span class="glyphicon glyphicon-tag"></span>
+							</figure>
+							<dl>
+								<dt>Meta Nodes</dt>
+								<!--<dd>Number of meta nodes</dd>-->
+								<dd class="big-value">5</dd>
+							</dl>
+						</div>
 					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-tag"></span>
-						</figure>
-						<dl>
-							<dt>Meta Nodes</dt>
-							<!--<dd>Number of meta nodes</dd>-->
-							<dd class="big-value">5</dd>
-						</dl>
-					</div>
-					<div class="data-group alert-success">
-						<figure>
-							<span class="glyphicon glyphicon-plugin"></span>
-						</figure>
-						<dl>
-							<dt>Plug-ins</dt>
-							<!--<dd>Number of plug-ins used</dd>-->
-							<dd class="big-value"><a href="#">0</a></dd>
-						</dl>
-						<dl class="data-hidden">
-							<dd><a href="#">Adobe Flash</a></dd>
-							<dd>Apple QuickTime</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6 alert-success">
+							<figure>
+								<span class="glyphicon glyphicon-plugin"></span>
+							</figure>
+							<dl>
+								<dt>Plug-ins</dt>
+								<!--<dd>Number of plug-ins used</dd>-->
+								<dd class="big-value"><a href="#">0</a></dd>
+							</dl>
+							<dl class="data-hidden">
+								<dd><a href="#">Adobe Flash</a></dd>
+								<dd>Apple QuickTime</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
-				<section id="page-resources" class="data-group data-group-medium">
+				<section id="page-resources" class="data-group col-lg-4">
 					<header>
 						<h2>Page Resources</h2>
 						<button type="button" title="See more in Developer Tools > Style Editor">Style Editor</button>
 					</header>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-pencil"></span>
-						</figure>
-						<dl>
-							<dt>Number of Stylesheets</dt>
-							<!--<dd>Number of stylesheets on page</dd>-->
-							<dd class="big-value"><a href="#">5</a></dd>
-						</dl>
-						<dl class="data-hidden">
-							<dd><a href="#">style.min.css</a></dd>
-							<!--<dd><a href="#">bootstrap.min.css</a></dd>-->
-							<dd><a href="#">bootstrap.responsive.min.css</a></dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6">
+							<figure>
+								<span class="glyphicon glyphicon-pencil"></span>
+							</figure>
+							<dl>
+								<dt>Number of Stylesheets</dt>
+								<!--<dd>Number of stylesheets on page</dd>-->
+								<dd class="big-value"><a href="#">5</a></dd>
+							</dl>
+							<dl class="data-hidden">
+								<dd><a href="#">style.min.css</a></dd>
+								<!--<dd><a href="#">bootstrap.min.css</a></dd>-->
+								<dd><a href="#">bootstrap.responsive.min.css</a></dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-6">
+							<figure>
+								<span class="glyphicon glyphicon-file"></span>
+							</figure>
+							<dl>
+								<dt>Number of Scripts</dt>
+								<!--<dd>Total number of scripts on page</dd>-->
+								<dd class="big-value">32</dd>
+							</dl>
+						</div>
 					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-file"></span>
-						</figure>
-						<dl>
-							<dt>Number of Scripts</dt>
-							<!--<dd>Total number of scripts on page</dd>-->
-							<dd class="big-value">32</dd>
-						</dl>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-font"></span>
-						</figure>
-						<dl>
-							<dt>Number of Fonts</dt>
-							<!--<dd>Number of fonts on page</dd>-->
-							<dd class="big-value"><a href="#">6</a></dd>
-						</dl>
-						<dl class="data-hidden">
-							<dd><a href="#">arial.ttf</a></dd>
-							<dd><a href="#">arial.otf</a></dd>
-							<dd><a href="#">arial.svg</a></dd>
-							<dd><a href="#">arial.eot</a></dd>
-							<dd><a href="#">arial.woof</a></dd>
-						</dl>
-					</div>
-					<div class="data-group alert-danger">
-						<figure>
-							<span class="glyphicon glyphicon-cloud-download"></span>
-						</figure>
-						<dl>
-							<dt>Number of iframes</dt>
-							<!--<dd>Total number of iframes on page</dd>-->
-							<dd class="big-value">15</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6">
+							<figure>
+								<span class="glyphicon glyphicon-font"></span>
+							</figure>
+							<dl>
+								<dt>Number of Fonts</dt>
+								<!--<dd>Number of fonts on page</dd>-->
+								<dd class="big-value"><a href="#">6</a></dd>
+							</dl>
+							<dl class="data-hidden">
+								<dd><a href="#">arial.ttf</a></dd>
+								<dd><a href="#">arial.otf</a></dd>
+								<dd><a href="#">arial.svg</a></dd>
+								<dd><a href="#">arial.eot</a></dd>
+								<dd><a href="#">arial.woof</a></dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-6 alert-danger">
+							<figure>
+								<span class="glyphicon glyphicon-cloud-download"></span>
+							</figure>
+							<dl>
+								<dt>Number of iframes</dt>
+								<!--<dd>Total number of iframes on page</dd>-->
+								<dd class="big-value">15</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
-				<section id="troubleshooting" class="data-group data-group-medium">
+				<section id="troubleshooting" class="data-group col-lg-4">
 					<header>
 						<h2>Troubleshooting</h2>
 						<button type="button" title="See more in Developer Tools > Web Console">Web Console</button>
 					</header>
-					<div class="data-group alert-danger">
-						<figure>
-							<span class="glyphicon glyphicon-minus-sign"></span>
-						</figure>
-						<dl>
-							<dt>Errors</dt>
-							<!--<dd>Number of detected errors</dd>-->
-							<dd class="big-value">325</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6 alert-danger">
+							<figure>
+								<span class="glyphicon glyphicon-minus-sign"></span>
+							</figure>
+							<dl>
+								<dt>Errors</dt>
+								<!--<dd>Number of detected errors</dd>-->
+								<dd class="big-value">325</dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-6 alert-warning">
+							<figure>
+								<span class="glyphicon glyphicon-exclamation-sign"></span>
+							</figure>
+							<dl>
+								<dt>Warnings</dt>
+								<!--<dd>Number of reported warnings</dd>-->
+								<dd class="big-value">15</dd>
+							</dl>
+						</div>
 					</div>
-					<div class="data-group alert-warning">
-						<figure>
-							<span class="glyphicon glyphicon-exclamation-sign"></span>
-						</figure>
-						<dl>
-							<dt>Warnings</dt>
-							<!--<dd>Number of reported warnings</dd>-->
-							<dd class="big-value">15</dd>
-						</dl>
-					</div>
-					<div class="data-group alert-success">
-						<figure>
-							<span class="glyphicon glyphicon-check"></span>
-						</figure>
-						<dl>
-							<dt>Quirks Mode</dt>
-							<!--<dd>Use of non-standard web technologies</dd>-->
-							<dd class="big-value">Off</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-6 alert-success">
+							<figure>
+								<span class="glyphicon glyphicon-check"></span>
+							</figure>
+							<dl>
+								<dt>Quirks Mode</dt>
+								<!--<dd>Use of non-standard web technologies</dd>-->
+								<dd class="big-value">Off</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
 			</div>
-			<div class="full-width">
-				<section id="security" class="data-group data-group-large">
+			<div class="row">
+				<section id="security" class="data-group col-md-10">
 					<header>
 						<h2>Security</h2>
 					</header>
-					<div class="data-group alert-success">
-						<figure>
-							<span class="glyphicon glyphicon-lock"></span>
-						</figure>
-						<dl>
-							<dt>SSL Encryption</dt>
-							<!--<dd>SSL Encryption status</dd>-->
-							<dd class="big-value">On</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-3 alert-success">
+							<figure>
+								<span class="glyphicon glyphicon-lock"></span>
+							</figure>
+							<dl>
+								<dt>SSL Encryption</dt>
+								<!--<dd>SSL Encryption status</dd>-->
+								<dd class="big-value">On</dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-3">
+							<figure>
+								<span class="glyphicon glyphicon-tower"></span>
+							</figure>
+							<dl>
+								<dt>Encryption Strength</dt>
+								<!--<dd>Strength of encryption</dd>-->
+								<dd class="big-value">128-bit</dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-3 alert-success">
+							<figure>
+								<span class="glyphicon glyphicon-check"></span>
+							</figure>
+							<dl>
+								<dt>Domain Trust</dt>
+								<!--<dd>Domain reputation</dd>-->
+								<dd class="big-value">Trusted</dd>
+							</dl>
+						</div>
+						<div class="data-group col-sm-3 alert-danger">
+							<figure>
+								<span class="glyphicon glyphicon-minus-sign"></span>
+							</figure>
+							<dl>
+								<dt>SSL Certificate Validity</dt>
+								<!--<dd>Validity of the SSL certificate</dd>-->
+								<dd class="big-value">Expired</dd>
+							</dl>
+						</div>
 					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-tower"></span>
-						</figure>
-						<dl>
-							<dt>Encryption Strength</dt>
-							<!--<dd>Strength of encryption</dd>-->
-							<dd class="big-value">128-bit</dd>
-						</dl>
-					</div>
-					<div class="data-group alert-success">
-						<figure>
-							<span class="glyphicon glyphicon-check"></span>
-						</figure>
-						<dl>
-							<dt>Domain Trust</dt>
-							<!--<dd>Domain reputation</dd>-->
-							<dd class="big-value">Trusted</dd>
-						</dl>
-					</div>
-					<div class="data-group alert-danger">
-						<figure>
-							<span class="glyphicon glyphicon-minus-sign"></span>
-						</figure>
-						<dl>
-							<dt>SSL Certificate Validity</dt>
-							<!--<dd>Validity of the SSL certificate</dd>-->
-							<dd class="big-value">Expired</dd>
-						</dl>
-					</div>
-					<div class="data-group alert-success">
-						<figure>
-							<span class="glyphicon glyphicon-transfer"></span>
-						</figure>
-						<dl>
-							<dt>Mixed Content</dt>
-							<!--<dd>Presence of non-encrypted content</dd>-->
-							<dd class="big-value">No</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-3 alert-success">
+							<figure>
+								<span class="glyphicon glyphicon-transfer"></span>
+							</figure>
+							<dl>
+								<dt>Mixed Content</dt>
+								<!--<dd>Presence of non-encrypted content</dd>-->
+								<dd class="big-value">No</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
-				<section id="colors" class="data-group data-group-small">
+				<section id="colors" class="data-group col-md-2">
 					<header>
 						<h2>Colors</h2>
 					</header>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-picture"></span>
-						</figure>
-						<dl>
-							<dt>8 Colors on Page</dt>
-							<!--<dd>Previews of all colors on page</dd>-->
-							<dd class="color-swatches">
-								<span style="background: #2D1152"></span>
-								<span style="background: #D2D0CE"></span>
-								<span style="background: #AAB0EA"></span>
-								<span style="background: #500095"></span>
-								<span style="background: #020202"></span>
-								<span style="background: #422C15"></span>
-								<span style="background: #CBB3C1"></span>
-								<span style="background: #D2D0CE"></span>
-							</dd>
-						</dl>
+					<div class="row">
+						<div class="data-group col-sm-12">
+							<dl>
+								<dt>8 Colors on Page</dt>
+								<!--<dd>Previews of all colors on page</dd>-->
+								<dd class="color-swatches">
+									<span style="background: #2D1152"></span>
+									<span style="background: #D2D0CE"></span>
+									<span style="background: #AAB0EA"></span>
+									<span style="background: #500095"></span>
+									<span style="background: #020202"></span>
+									<span style="background: #422C15"></span>
+									<span style="background: #CBB3C1"></span>
+									<span style="background: #D2D0CE"></span>
+								</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
 			</div>
-			<div class="full-width">
-				<section id="display" class="data-group data-group-medium">
+			<div class="row">
+				<section id="display" class="data-group col-md-6">
 					<header>
 						<h2>Display</h2>
 						<button type="button" title="See more in Developer Tools > Tool Name">Tool Name</button>
 					</header>
-					<div class="data-group v-b-container">
-						<div class="visual-box">
-							<div class="arrow arrow-down"></div>
-							<div class="arrow arrow-left"></div>
-							<div class="v-b-height">
-								<div class="data-group">
-									<dl>
-										<dt>Page Height</dt>
-										<!--<dd>Height of the page</dd>-->
-										<dd class="big-value">2721px</dd>
-									</dl>
+					<div class="row">
+						<div class="data-group col-sm-6">
+							<div class="visual-box">
+								<div class="arrow arrow-down"></div>
+								<div class="arrow arrow-left"></div>
+								<div class="v-b-height">
+									<div class="data-group">
+										<dl>
+											<dt>Page Height</dt>
+											<!--<dd>Height of the page</dd>-->
+											<dd class="big-value">2721px</dd>
+										</dl>
+									</div>
 								</div>
-							</div>
-							<div class="v-b-width">
-								<div class="data-group">
-									<dl>
-										<dt>Page Width</dt>
-										<!--<dd>Width of the page</dd>-->
-										<dd class="big-value">1211px</dd>
-									</dl>
+								<div class="v-b-width">
+									<div class="data-group">
+										<dl>
+											<dt>Page Width</dt>
+											<!--<dd>Width of the page</dd>-->
+											<dd class="big-value">1211px</dd>
+										</dl>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-adjust"></span>
-						</figure>
-						<dl>
-							<dt>CSS Pixels</dt>
-							<!--<dd>Number of pixels per CSS pixel</dd>-->
-							<dd class="big-value">2</dd>
-						</dl>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-eye-open"></span>
-						</figure>
-						<dl>
-							<dt>Display DPI</dt>
-							<!--<dd>Dots per inch of the display</dd>-->
-							<dd class="big-value">221</dd>
-						</dl>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-adjust"></span>
+							</figure>
+							<dl>
+								<dt>CSS Pixels</dt>
+								<!--<dd>Number of pixels per CSS pixel</dd>-->
+								<dd class="big-value">2</dd>
+							</dl>
+						</div>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-eye-open"></span>
+							</figure>
+							<dl>
+								<dt>Display DPI</dt>
+								<!--<dd>Dots per inch of the display</dd>-->
+								<dd class="big-value">221</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
-				<section id="viewport" class="data-group data-group-medium">
+				<section id="viewport" class="data-group col-md-6">
 					<header>
 						<h2>Viewport</h2>
 					</header>
-					<div class="data-group v-b-container">
-						<div class="visual-box">
-							<div class="arrow arrow-left"></div>
-							<div class="arrow arrow-down"></div>
-							<div class="v-b-width">
-								<div class="data-group">
-									<dl>
-										<dt>Viewport Width</dt>
-										<!--<dd>Width of the viewport</dd>-->
-										<dd class="big-value">980px</dd>
-									</dl>
+					<div class="row">
+						<div class="data-group col-sm-6">
+							<div class="visual-box">
+								<div class="arrow arrow-left"></div>
+								<div class="arrow arrow-down"></div>
+								<div class="v-b-width">
+									<div class="data-group">
+										<dl>
+											<dt>Viewport Width</dt>
+											<!--<dd>Width of the viewport</dd>-->
+											<dd class="big-value">980px</dd>
+										</dl>
+									</div>
 								</div>
-							</div>
-							<div class="v-b-height">
-								<div class="data-group">
-									<dl>
-										<dt>Viewport Height</dt>
-										<!--<dd>Height of the viewport</dd>-->
-										<dd class="big-value">620px</dd>
-									</dl>
+								<div class="v-b-height">
+									<div class="data-group">
+										<dl>
+											<dt>Viewport Height</dt>
+											<!--<dd>Height of the viewport</dd>-->
+											<dd class="big-value">620px</dd>
+										</dl>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-resize-full"></span>
-						</figure>
-						<dl>
-							<dt>Auto Size</dt>
-							<!--<dd>Short description here</dd>-->
-							<dd class="big-value">Off</dd>
-						</dl>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-zoom-in"></span>
-						</figure>
-						<dl>
-							<dt>Zoomable</dt>
-							<!--<dd>Short description here</dd>-->
-							<dd class="big-value">Yes</dd>
-						</dl>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-th"></span>
-						</figure>
-						<dl>
-							<dt>Minimum Zoom</dt>
-							<!--<dd>Short description here</dd>-->
-							<dd class="big-value">0</dd>
-						</dl>
-					</div>
-					<div class="data-group">
-						<figure>
-							<span class="glyphicon glyphicon-stop"></span>
-						</figure>
-						<dl>
-							<dt>Maximum Zoom</dt>
-							<!--<dd>Short description here</dd>-->
-							<dd class="big-value">20</dd>
-						</dl>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-resize-full"></span>
+							</figure>
+							<dl>
+								<dt>Auto Size</dt>
+								<!--<dd>Short description here</dd>-->
+								<dd class="big-value">Off</dd>
+							</dl>
+						</div>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-zoom-in"></span>
+							</figure>
+							<dl>
+								<dt>Zoomable</dt>
+								<!--<dd>Short description here</dd>-->
+								<dd class="big-value">Yes</dd>
+							</dl>
+						</div>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-th"></span>
+							</figure>
+							<dl>
+								<dt>Minimum Zoom</dt>
+								<!--<dd>Short description here</dd>-->
+								<dd class="big-value">0</dd>
+							</dl>
+						</div>
+						<div class="data-group col-xs-6">
+							<figure>
+								<span class="glyphicon glyphicon-stop"></span>
+							</figure>
+							<dl>
+								<dt>Maximum Zoom</dt>
+								<!--<dd>Short description here</dd>-->
+								<dd class="big-value">20</dd>
+							</dl>
+						</div>
 					</div>
 				</section>
 			</div>

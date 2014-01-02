@@ -19,7 +19,7 @@
 }
 
 .glyphicon {
-  font-family: 'Glyphicons Halflings Firefox';
+	font-family: 'Glyphicons Halflings Firefox';
 }
 
 .glyphicon-encoding:before{
@@ -34,14 +34,10 @@ body {
 	font-family: 'FiraSans';
 	color:#667380;
 }
-.full-width{
-	overflow: auto;
-	width:100%;
-}
 #main_header{
 	background: #292E33;
 	color:#fff;
-	margin: 1rem;
+	margin: 15px 0 0; /* Suggested for Bootstrap */
 	padding: 2.571rem 2.25rem 2.25rem;
 }
 #main_header .glyphicon{
@@ -69,16 +65,10 @@ body {
 }
 .data-group{
 	color: #667380;
-	padding:1rem;
-	display: inline-block;
-	vertical-align: top;
-	min-width: 25.629rem;
-	max-width: 25.629rem;
-}
-
-.full-width #timeline{
-	min-width: 100%;
-	max-width: 100%;
+	/*padding:1rem;*/
+	/*display: inline-block;*/
+	/*min-width: 25.629rem;*/
+	/*max-width: 25.629rem;*/
 }
 
 .data-group button{
@@ -88,7 +78,7 @@ body {
 }
 .data-group header{
 	padding: 1.313rem 2.25rem;
-	margin:0 0 2.25rem;
+	margin:2rem 0 1.313rem;
 	background: #667380;
 	color: #fff;
 }
@@ -106,21 +96,24 @@ body {
 .data-sections a:hover{
 	color:#18191A
 }
-.data-group figure{
-	float:left;
-	width:5.786rem;
+
+.data-group figure {
+    float: left;
+    width: 5.786rem;
 }
+
 .data-group figure .glyphicon{
 	font-size: 4.43rem;
 	color: inherit;
 }
+
 .data-group dl{
-	margin:0 0 0 6.645rem
+	margin:0;
 }
 .data-group dt{
 	font-size: 1.313rem;
 	font-weight: 500;
-	margin: 0 0 0.508rem;
+	margin-bottom:0.296rem;
 	text-transform: uppercase;
 }
 .big-value{
@@ -152,8 +145,15 @@ body {
 	font-size: 1.313rem;
 }
 .data-sections{
-	overflow: auto;
-	margin:1rem;
+	padding:0 15px; /* Required for Bootstrap */
+}
+section > .row > .data-group{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+section > .row{
+	padding-right: 2.25rem;
+	padding-left: 2.25rem;
 }
 .data-sections h2{
 	font-family: inherit;
@@ -161,38 +161,19 @@ body {
 	font-weight: 400;
 	line-height: inherit;
 }
-.data-sections section{
-	display: inline-block;
-	vertical-align: top;
-}
-.data-group-small{
-	min-width: 21.269%;
-	max-width: 21.269%;
-}
 
-.data-group-medium{
-	max-width: 36.469%;
+#timeline{
+	margin-bottom: 0.226rem;
 }
-
-.data-group.v-b-container,
-.data-group.v-b-container,
-.data-group.v-b-container{
-	float:left;
-}
-
-.data-group-medium .data-group-small,
-.data-group-large .data-group-small,
-.data-group-large .data-group-medium{
-	display:inline-block;
-	vertical-align: top;
-}
-.data-group-large{
-	max-width: 71.792%;
+#timeline header{
+	margin-top: 2.25rem;
+	margin-bottom: 2.25rem;
 }
 .data-timeline{
 	border-radius: 4.43rem;
 	overflow:auto;
 }
+
 .data-timeline div{
 	float:left;
 	transition: 120ms all ease-in-out 20ms;
@@ -223,8 +204,8 @@ body {
 
 .data-group .data-hidden{
 	display: none;
-	padding:1rem 1.5rem 1.5rem;
-	margin: 1rem 0;
+	/*padding:1rem 1.5rem 1.5rem;*/
+	/*margin: 1rem 0;*/
 	font-size:1.143rem;
 	color:#667380;
 	border: 0.296rem solid #EBECED;
@@ -239,7 +220,7 @@ body {
 }
 
 .visual-box dl{
-	margin-left:0;
+	margin:1rem;
 }
 .visual-box dd.big-value{
 	margin-top:1rem
@@ -251,8 +232,8 @@ body {
 	margin-bottom:1.969rem;
 	position: relative;
 	background: #F7F7F7;
-	min-height: 29.29rem;
-	max-height:	29.29rem;
+	min-height: 33.638rem;
+	max-height:	33.638rem;
 	border-width: 0.75rem;
 	border-style: solid;
 	border-top-color:#292E33;
@@ -266,7 +247,6 @@ body {
 	top:1.5rem;
 	text-align: left;
 }
-
 .v-b-height .data-group{
 	position: absolute;
 	right:1.5rem;
@@ -298,42 +278,16 @@ body {
 	padding-top:1rem;
 }
 
-@media (min-width: 1301px) and (max-width: 1620px) {
-	.data-group-medium{
-		max-width: 38%;
-	}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	.visual-box{max-width: 98%}
 }
 
-@media (min-width: 967px) and (max-width: 1300px) {
-	.data-group-small{
-		max-width: 30%;
-	}
-	.data-group-medium{
-		max-width: 60%;
-	}
-	.data-group-large{
-		max-width: 100%;
-	}
-}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
 
-@media (max-width: 967px) {
-	.data-group-small,
-	.data-group-medium,
-	.data-group-large
-	{
-		min-width:inherit;
-		max-width:inherit;
-	}
-
-	.data-sections section{
-		min-width: 100%;
-	}
-
-}
-@media (max-width:400px) {
-
-	a.data-tool-link{
-		margin-left: 0;
-	}
-
-}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
