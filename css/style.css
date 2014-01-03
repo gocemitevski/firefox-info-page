@@ -218,7 +218,6 @@ section > .row{
 .data-hidden dd:before{
 	content:'- ';
 }
-
 .visual-box dl{
 	margin:1rem;
 }
@@ -252,6 +251,11 @@ section > .row{
 	right:1.5rem;
 	bottom:1.5rem;
 	text-align: right;
+}
+
+.v-b-width dl,
+.v-b-height dl{
+	color:#292E33;
 }
 
 .visual-box .arrow{
