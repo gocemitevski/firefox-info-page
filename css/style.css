@@ -31,7 +31,7 @@
 }
 
 body {
-	font-family: 'FiraSans';
+	font-family: 'FiraSans', sans-serif;
 	color:#667380;
 }
 #main_header{
