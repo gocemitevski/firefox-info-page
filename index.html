@@ -5,264 +5,207 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/fonts.css" rel="stylesheet" media="screen">
+		<!--<link href="css/fonts.css" rel="stylesheet" media="screen">-->
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		<div class="data-sections">
-			<header id="main_header">
-				<h1>Page Title Here ...</h1>
-				<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
-				<div class="data-buttons">
-					<button type="button">Refresh</button>
-					<button type="button">Export</button>
-				</div>
-			</header>
+			<!--			<header id="main_header">
+							<h1>Page Title Here ...</h1>
+							<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
+							<div class="data-buttons">
+								<button type="button">Refresh</button>
+								<button type="button">Export</button>
+							</div>
+						</header>-->
 			<div class="row">
 				<section id="timeline" class="data-group col-lg-12">
-					<header>
-						<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
-						<button type="button" title="See more in Developer Tools > Network">Network</button>
-					</header>
-					<div class="data-timeline">
-						<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
-						<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
-						<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
-						<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
-						<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
-						<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
-						<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
-						<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+					<div class="row">
+						<header>
+							<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
+							<button type="button" title="See more in Developer Tools > Network">Network</button>
+						</header>
+						<div class="data-timeline">
+							<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
+							<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
+							<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
+							<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
+							<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
+							<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
+							<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
+							<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+						</div>
 					</div>
 				</section>
 			</div>
 			<div class="row">
-				<section id="general" class="data-group col-lg-4">
+				<section id="general" class="data-group col-lg-3">
 					<header>
+						<figure>
+							<span class="glyphicon glyphicon-encoding"></span>
+						</figure>
 						<h2>General</h2>
 					</header>
 					<div class="row">
-						<div class="data-group col-sm-6">
-							<figure>
-								<span class="glyphicon glyphicon-encoding"></span>
-							</figure>
-							<dl>
-								<dt>Encoding</dt>
-								<!--<dd>Page character encoding</dd>-->
-								<dd class="big-value">UTF-8</dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-6">
-							<figure>
-								<span class="glyphicon glyphicon-tag"></span>
-							</figure>
-							<dl>
-								<dt>Meta Nodes</dt>
-								<!--<dd>Number of meta nodes</dd>-->
-								<dd class="big-value">5</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="row">
-						<div class="data-group col-sm-6 alert-success">
-							<figure>
-								<span class="glyphicon glyphicon-plugin"></span>
-							</figure>
-							<dl>
-								<dt>Plug-ins</dt>
-								<!--<dd>Number of plug-ins used</dd>-->
-								<dd class="big-value"><a href="#">0</a></dd>
-							</dl>
-							<dl class="data-hidden">
-								<dd><a href="#">Adobe Flash</a></dd>
-								<dd>Apple QuickTime</dd>
-							</dl>
+						<div class="data-group col-xs-12">
+							<div class="row">
+								<div class="col-xs-8">
+									Encoding
+								</div>
+								<div class="col-xs-4">
+									UTF-8
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Meta Nodes
+								</div>
+								<div class="col-xs-4">
+									5
+								</div>
+							</div>
+							<div class="row alert-success">
+								<div class="col-xs-8">
+									Plug-ins
+								</div>
+								<div class="col-xs-4">
+									0
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
-				<section id="page-resources" class="data-group col-lg-4">
+				<section id="page-resources" class="data-group col-lg-3">
 					<header>
-						<h2>Page Resources</h2>
+						<figure>
+							<span class="glyphicon glyphicon-file"></span>
+						</figure>
+						<h2>Resources</h2>
 						<button type="button" title="See more in Developer Tools > Style Editor">Style Editor</button>
 					</header>
 					<div class="row">
-						<div class="data-group col-sm-6">
-							<figure>
-								<span class="glyphicon glyphicon-pencil"></span>
-							</figure>
-							<dl>
-								<dt>Number of Stylesheets</dt>
-								<!--<dd>Number of stylesheets on page</dd>-->
-								<dd class="big-value"><a href="#">5</a></dd>
-							</dl>
-							<dl class="data-hidden">
-								<dd><a href="#">style.min.css</a></dd>
-								<!--<dd><a href="#">bootstrap.min.css</a></dd>-->
-								<dd><a href="#">bootstrap.responsive.min.css</a></dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-6">
-							<figure>
-								<span class="glyphicon glyphicon-file"></span>
-							</figure>
-							<dl>
-								<dt>Number of Scripts</dt>
-								<!--<dd>Total number of scripts on page</dd>-->
-								<dd class="big-value">32</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="row">
-						<div class="data-group col-sm-6">
-							<figure>
-								<span class="glyphicon glyphicon-font"></span>
-							</figure>
-							<dl>
-								<dt>Number of Fonts</dt>
-								<!--<dd>Number of fonts on page</dd>-->
-								<dd class="big-value"><a href="#">6</a></dd>
-							</dl>
-							<dl class="data-hidden">
-								<dd><a href="#">arial.ttf</a></dd>
-								<dd><a href="#">arial.otf</a></dd>
-								<dd><a href="#">arial.svg</a></dd>
-								<dd><a href="#">arial.eot</a></dd>
-								<dd><a href="#">arial.woof</a></dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-6 alert-danger">
-							<figure>
-								<span class="glyphicon glyphicon-cloud-download"></span>
-							</figure>
-							<dl>
-								<dt>Number of iframes</dt>
-								<!--<dd>Total number of iframes on page</dd>-->
-								<dd class="big-value">15</dd>
-							</dl>
+						<div class="data-group col-xs-12">
+							<div class="row">
+								<div class="col-xs-8">
+									Number of Stylesheets
+								</div>
+								<div class="col-xs-4">
+									<a href="#">5</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Number of Scripts
+								</div>
+								<div class="col-xs-4">
+									<a href="#">32</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Number of Fonts
+								</div>
+								<div class="col-xs-4">
+									<a href="#">6</a>
+								</div>
+							</div>
+							<div class="row alert-danger">
+								<div class="col-xs-8">
+									Number of iframes
+								</div>
+								<div class="col-xs-4">
+									15
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
-				<section id="troubleshooting" class="data-group col-lg-4">
+				<section id="security" class="data-group col-lg-3">
 					<header>
+						<figure>
+							<span class="glyphicon glyphicon-lock"></span>
+						</figure>
+						<h2>Security</h2>
+					</header>
+					<div class="row">
+						<div class="data-group col-xs-12">
+							<div class="row alert-success">
+								<div class="col-xs-8">
+									SSL Encryption
+								</div>
+								<div class="col-xs-4">
+									On
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Encryption Strength
+								</div>
+								<div class="col-xs-4">
+									128-bit
+								</div>
+							</div>
+							<div class="row alert-success">
+								<div class="col-xs-8">
+									Domain Trust
+								</div>
+								<div class="col-xs-4">
+									Trusted
+								</div>
+							</div>
+							<div class="row alert-danger">
+								<div class="col-xs-8">
+									SSL Certificate Validity
+								</div>
+								<div class="col-xs-4">
+									Expired
+								</div>
+							</div>
+							<div class="row alert-success">
+								<div class="col-xs-8">
+									Mixed Content
+								</div>
+								<div class="col-xs-4">
+									None
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="troubleshooting" class="data-group col-lg-3">
+					<header>
+						<figure>
+							<span class="glyphicon glyphicon-exclamation-sign"></span>
+						</figure>
 						<h2>Troubleshooting</h2>
 						<button type="button" title="See more in Developer Tools > Web Console">Web Console</button>
 					</header>
 					<div class="row">
-						<div class="data-group col-sm-6 alert-danger">
-							<figure>
-								<span class="glyphicon glyphicon-minus-sign"></span>
-							</figure>
-							<dl>
-								<dt>Errors</dt>
-								<!--<dd>Number of detected errors</dd>-->
-								<dd class="big-value">325</dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-6 alert-warning">
-							<figure>
-								<span class="glyphicon glyphicon-exclamation-sign"></span>
-							</figure>
-							<dl>
-								<dt>Warnings</dt>
-								<!--<dd>Number of reported warnings</dd>-->
-								<dd class="big-value">15</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="row">
-						<div class="data-group col-sm-6 alert-success">
-							<figure>
-								<span class="glyphicon glyphicon-check"></span>
-							</figure>
-							<dl>
-								<dt>Quirks Mode</dt>
-								<!--<dd>Use of non-standard web technologies</dd>-->
-								<dd class="big-value">Off</dd>
-							</dl>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="row">
-				<section id="security" class="data-group col-md-10">
-					<header>
-						<h2>Security</h2>
-					</header>
-					<div class="row">
-						<div class="data-group col-sm-3 alert-success">
-							<figure>
-								<span class="glyphicon glyphicon-lock"></span>
-							</figure>
-							<dl>
-								<dt>SSL Encryption</dt>
-								<!--<dd>SSL Encryption status</dd>-->
-								<dd class="big-value">On</dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-3">
-							<figure>
-								<span class="glyphicon glyphicon-tower"></span>
-							</figure>
-							<dl>
-								<dt>Encryption Strength</dt>
-								<!--<dd>Strength of encryption</dd>-->
-								<dd class="big-value">128-bit</dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-3 alert-success">
-							<figure>
-								<span class="glyphicon glyphicon-check"></span>
-							</figure>
-							<dl>
-								<dt>Domain Trust</dt>
-								<!--<dd>Domain reputation</dd>-->
-								<dd class="big-value">Trusted</dd>
-							</dl>
-						</div>
-						<div class="data-group col-sm-3 alert-danger">
-							<figure>
-								<span class="glyphicon glyphicon-minus-sign"></span>
-							</figure>
-							<dl>
-								<dt>SSL Certificate Validity</dt>
-								<!--<dd>Validity of the SSL certificate</dd>-->
-								<dd class="big-value">Expired</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="row">
-						<div class="data-group col-sm-3 alert-success">
-							<figure>
-								<span class="glyphicon glyphicon-transfer"></span>
-							</figure>
-							<dl>
-								<dt>Mixed Content</dt>
-								<!--<dd>Presence of non-encrypted content</dd>-->
-								<dd class="big-value">No</dd>
-							</dl>
-						</div>
-					</div>
-				</section>
-				<section id="colors" class="data-group col-md-2">
-					<header>
-						<h2>Colors</h2>
-					</header>
-					<div class="row">
-						<div class="data-group col-sm-12">
-							<dl>
-								<dt>8 Colors on Page</dt>
-								<!--<dd>Previews of all colors on page</dd>-->
-								<dd class="color-swatches">
-									<span style="background: #2D1152"></span>
-									<span style="background: #D2D0CE"></span>
-									<span style="background: #AAB0EA"></span>
-									<span style="background: #500095"></span>
-									<span style="background: #020202"></span>
-									<span style="background: #422C15"></span>
-									<span style="background: #CBB3C1"></span>
-									<span style="background: #D2D0CE"></span>
-								</dd>
-							</dl>
+						<div class="data-group col-xs-12">
+							<div class="row alert-danger">
+								<div class="col-xs-8">
+									Errors
+								</div>
+								<div class="col-xs-4">
+									<a href="#">325</a>
+								</div>
+							</div>
+							<div class="row alert-warning">
+								<div class="col-xs-8">
+									Warnings
+								</div>
+								<div class="col-xs-4">
+									<a href="#">15</a>
+								</div>
+							</div>
+							<div class="row alert-success">
+								<div class="col-xs-8">
+									Quirks Mode
+								</div>
+								<div class="col-xs-4">
+									Off
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -270,6 +213,9 @@
 			<div class="row">
 				<section id="display" class="data-group col-md-6">
 					<header>
+						<figure>
+							<span class="glyphicon glyphicon-adjust"></span>
+						</figure>
 						<h2>Display</h2>
 						<button type="button" title="See more in Developer Tools > Tool Name">Tool Name</button>
 					</header>
@@ -283,7 +229,7 @@
 										<dl>
 											<dt>Page Height</dt>
 											<!--<dd>Height of the page</dd>-->
-											<dd class="big-value">2721px</dd>
+											<dd>2721px</dd>
 										</dl>
 									</div>
 								</div>
@@ -292,36 +238,51 @@
 										<dl>
 											<dt>Page Width</dt>
 											<!--<dd>Width of the page</dd>-->
-											<dd class="big-value">1211px</dd>
+											<dd>1211px</dd>
 										</dl>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-adjust"></span>
-							</figure>
-							<dl>
-								<dt>CSS Pixels</dt>
-								<!--<dd>Number of pixels per CSS pixel</dd>-->
-								<dd class="big-value">2</dd>
-							</dl>
+						<div class="data-group col-sm-6">
+							<div>8 Colors on Page</div>
+							<div class="color-swatches">
+								<span style="background: #2D1152"></span>
+								<span style="background: #D2D0CE"></span>
+								<span style="background: #AAB0EA"></span>
+								<span style="background: #500095"></span>
+								<span style="background: #020202"></span>
+								<span style="background: #422C15"></span>
+								<span style="background: #CBB3C1"></span>
+								<span style="background: #D2D0CE"></span>
+							</div>
 						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-eye-open"></span>
-							</figure>
-							<dl>
-								<dt>Display DPI</dt>
-								<!--<dd>Dots per inch of the display</dd>-->
-								<dd class="big-value">221</dd>
-							</dl>
+						<div class="data-group col-sm-6">
+							<div class="row">
+								<div class="col-xs-8">
+									CSS Pixels
+								</div>
+								<div class="col-xs-4">
+									2
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Display DPI
+								</div>
+								<div class="col-xs-4">
+									221
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</section>
 				<section id="viewport" class="data-group col-md-6">
 					<header>
+						<figure>
+							<span class="glyphicon glyphicon-eye-open"></span>
+						</figure>
 						<h2>Viewport</h2>
 					</header>
 					<div class="row">
@@ -334,7 +295,7 @@
 										<dl>
 											<dt>Viewport Width</dt>
 											<!--<dd>Width of the viewport</dd>-->
-											<dd class="big-value">980px</dd>
+											<dd>980px</dd>
 										</dl>
 									</div>
 								</div>
@@ -343,54 +304,60 @@
 										<dl>
 											<dt>Viewport Height</dt>
 											<!--<dd>Height of the viewport</dd>-->
-											<dd class="big-value">620px</dd>
+											<dd>620px</dd>
 										</dl>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-resize-full"></span>
-							</figure>
-							<dl>
-								<dt>Auto Size</dt>
-								<!--<dd>Short description here</dd>-->
-								<dd class="big-value">Off</dd>
-							</dl>
-						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-zoom-in"></span>
-							</figure>
-							<dl>
-								<dt>Zoomable</dt>
-								<!--<dd>Short description here</dd>-->
-								<dd class="big-value">Yes</dd>
-							</dl>
-						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-th"></span>
-							</figure>
-							<dl>
-								<dt>Minimum Zoom</dt>
-								<!--<dd>Short description here</dd>-->
-								<dd class="big-value">0</dd>
-							</dl>
-						</div>
-						<div class="data-group col-xs-6">
-							<figure>
-								<span class="glyphicon glyphicon-stop"></span>
-							</figure>
-							<dl>
-								<dt>Maximum Zoom</dt>
-								<!--<dd>Short description here</dd>-->
-								<dd class="big-value">20</dd>
-							</dl>
+						<div class="data-group col-sm-6">
+							<div class="row">
+								<div class="col-xs-8">
+									Auto Size
+								</div>
+								<div class="col-xs-4">
+									Off
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Zoomable
+								</div>
+								<div class="col-xs-4">
+									Yes
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Minimum Zoom
+								</div>
+								<div class="col-xs-4">
+									0
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									Maximum Zoom
+								</div>
+								<div class="col-xs-4">
+									20
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<footer class="data-group">
+						<p>Firefox page info report for: <strong>"Page Title Here"</strong></p>
+						<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
+						<div class="data-buttons">
+							<button type="button">Refresh</button>
+							<button type="button">Export</button>
+						</div>
+					</footer>
+				</div>
 			</div>
 		</div>
 	</body>
