@@ -10,14 +10,6 @@
 	</head>
 	<body>
 		<div class="data-sections">
-			<!--			<header id="main_header">
-							<h1>Page Title Here ...</h1>
-							<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
-							<div class="data-buttons">
-								<button type="button">Refresh</button>
-								<button type="button">Export</button>
-							</div>
-						</header>-->
 			<div class="row">
 				<section id="timeline" class="data-group col-lg-12">
 					<div class="row">
@@ -26,14 +18,62 @@
 							<button type="button" title="See more in Developer Tools > Network">Network</button>
 						</header>
 						<div class="data-timeline">
-							<div title="fetchStart: 0%" style="width:0%; background: #0088CC"></div>
-							<div title="domainLookupStart: 1%" style="width:1%; background: #5B5FFF"></div>
-							<div title="domainLookupEnd: 1%" style="width:1%; background: #B82EE5"></div>
-							<div title="connectStart: 2%" style="width:2%; background: #ED2655"></div>
-							<div title="requestStart: 12%" style="width:12%; background: #F13C00"></div>
-							<div title="connectEnd: 25%" style="width:25%; background: #D97E00"></div>
-							<div title="responseStart: 30%" style="width:30%; background: #2CBB0F"></div>
-							<div title="responseEnd: 29%" style="width:29%; background: #5F88B0"></div>
+							<div title="fetchStart" class="timeline-block" style="display:none; width:0%; background: #0088CC">
+								<div class="timeline-mark">
+									<span class="timeline-label">fetchStart:</span>
+									<span class="timeline-percent">0%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="domainLookupStart" class="timeline-block" style="width:1%; background: #5B5FFF">
+								<div class="timeline-mark">
+									<span class="timeline-label">domainLookupStart:</span>
+									<span class="timeline-percent">1%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="domainLookupEnd" class="timeline-block" style="width:1%; background: #B82EE5">
+								<div class="timeline-mark">
+									<span class="timeline-label">domainLookupEnd:</span>
+									<span class="timeline-percent">1%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="connectStart" class="timeline-block" style="width:2%; background: #ED2655">
+								<div class="timeline-mark">
+									<span class="timeline-label">connectStart:</span>
+									<span class="timeline-percent">2%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="requestStart" class="timeline-block" style="width:12%; background: #F13C00">
+								<div class="timeline-mark">
+									<span class="timeline-label">requestStart:</span>
+									<span class="timeline-percent">12%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="connectEnd" class="timeline-block" style="width:25%; background: #D97E00">
+								<div class="timeline-mark">
+									<span class="timeline-label">connectEnd:</span>
+									<span class="timeline-percent">25%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="responseStart" class="timeline-block" style="width:30%; background: #2CBB0F">
+								<div class="timeline-mark">
+									<span class="timeline-label">responseStart:</span>
+									<span class="timeline-percent">30%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
+							<div title="responseEnd" class="timeline-block" style="width:29%; background: #5F88B0">
+								<div class="timeline-mark">
+									<span class="timeline-label">responseEnd:</span>
+									<span class="timeline-percent">29%</span>
+								</div>
+								<div class="timeline-bar"></div>
+							</div>
 						</div>
 					</div>
 				</section>
