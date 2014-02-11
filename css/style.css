@@ -152,8 +152,7 @@ section > .row{
 }
 
 .data-timeline{
-	overflow: hidden;
-	border-radius: 4.43rem;
+	overflow: auto;
 	margin: 2rem 0 1rem;
 }
 
@@ -162,40 +161,176 @@ section > .row{
 	position: relative;
 	min-height: 4.43rem;
 	transition: 120ms all ease-in-out 20ms;
-	overflow:hidden;
+	overflow: visible;
+	margin: 8rem 0;
+	border-radius: 4.43rem;
 }
 
 .timeline-block:hover{
 	cursor: help;
 	position: relative;
-	border-top: 0.508rem solid rgba(255, 255, 255, 0.508);
-	border-bottom: 0.508rem solid rgba(255, 255, 255, 0.508);
+	transform: translateY(-0.508rem)
 }
 
 .timeline-block:hover .timeline-label{
 	display:inline;
 }
 
-.timeline-bar{
-	transition: 120ms all ease-in-out 20ms;
-}
-
 .timeline-label {
-	display: none;
+	background: #fff;
+	border-radius: 6.645rem;
+	padding: 0.508rem;
+	z-index: 5;
 }
 
 .timeline-percent {
 	font-weight: 700;
+	background: #eee;
+	border-radius: 6.645rem;
+	padding: 0.508rem 1rem;
 }
 
 .timeline-mark{
 	position: absolute;
-	top: 29%;
-	right: 3%;
-	animation: fadeIn 0.5s;
+	left: 45%;
+	border-left: 0.25rem solid #222;
+	animation: fadeIn 1s;
 	font-size: 1.313rem;
-	color: #fff;
 	white-space: nowrap;
+	border-radius: 1rem;
+}
+
+.fetch-start .timeline-label,
+.domain-lookup-start .timeline-label,
+.request-start .timeline-label,
+.connect-end .timeline-label,
+.response-end .timeline-label{
+	position: relative;
+	top: -1rem;
+	left: 0.508rem;
+}
+
+.response-end .timeline-mark{
+	left: auto;
+	right: 45%;
+}
+
+.response-end .timeline-label{
+	left: -0.508rem;
+}
+
+.fetch-start .timeline-percent,
+.domain-lookup-start .timeline-percent,
+.request-start .timeline-percent,
+.connect-end .timeline-percent,
+.response-end .timeline-percent{
+	position: relative;
+	top: -1rem;
+	left: 0.508rem;
+}
+
+.response-end .timeline-percent{
+	left: -0.508rem;
+}
+
+.domain-lookup-end .timeline-percent,
+.connect-start .timeline-percent,
+.response-start .timeline-percent{
+	position: relative;
+	bottom: -1rem;
+	left: 0.508rem;
+}
+
+.domain-lookup-end .timeline-label,
+.connect-start .timeline-label,
+.response-start .timeline-label{
+	position: relative;
+	bottom: -1rem;
+	left: 0.508rem;
+}
+
+.fetch-start .timeline-mark{
+	top: -5.375rem;
+	padding-bottom: 6rem;
+	border-left-color: #0088CC;
+}
+
+.fetch-start .timeline-percent{
+	color: #0088CC;
+}
+
+.domain-lookup-start .timeline-mark{
+	border-left-color: #5B5FFF;
+}
+
+.domain-lookup-start .timeline-percent{
+	color: #5B5FFF;
+}
+
+.domain-lookup-end .timeline-mark{
+	border-left-color: #B82EE5;
+	top: 2rem;
+	padding-top: 6rem;
+}
+
+.domain-lookup-end .timeline-percent{
+	color: #B82EE5;
+}
+
+.connect-start .timeline-mark{
+	top: 2.375rem;
+	padding-top: 2.25rem;
+	border-left-color: #ED2655;
+}
+
+.connect-start .timeline-percent{
+	color: #ED2655;
+}
+
+.request-start .timeline-mark{
+	left: 85%;
+	top: -5.375rem;
+	padding-bottom: 6rem;
+	border-left-color: #F13C00;
+}
+
+.request-start .timeline-percent{
+	color: #F13C00;
+}
+
+.connect-end .timeline-mark{
+	border-left-color: #D97E00;
+}
+
+.connect-end .timeline-percent{
+	color: #D97E00;
+}
+
+.response-start .timeline-mark{
+	top: 2.375rem;
+	padding-top: 2.25rem;
+	border-left-color: #2CBB0F;
+}
+
+.response-start .timeline-percent{
+	color: #2CBB0F;
+}
+
+.response-end .timeline-mark{
+	border-left: 0;
+	border-right: 0.25rem solid #222;
+	border-right-color: #5F88B0;
+}
+
+.response-end .timeline-percent{
+	color: #5F88B0;
+}
+
+.domain-lookup-start .timeline-mark,
+.connect-end .timeline-mark,
+.response-end .timeline-mark{
+	top: -1.953rem;
+	padding-bottom: 2.25rem;
 }
 
 .data-group .data-hidden{
@@ -308,6 +443,10 @@ footer{
 @media (max-width: 768px) {
 	.visual-box{
 		max-width: 98%
+	}
+
+	.timeline-label{
+		display: none;
 	}
 }
 
