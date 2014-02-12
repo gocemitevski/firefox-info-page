@@ -169,17 +169,15 @@ section > .row{
 	float: left;
 	position: relative;
 	min-height: 4.43rem;
-	transition: 120ms all ease-in-out 30ms;
 	overflow: visible;
 	margin: 8rem 0;
 	border-radius: 4.43rem;
+	transition: 120ms all ease-out 70ms;
 }
 
 .timeline-block:hover{
 	cursor: help;
-	position: relative;
 	transform: translateY(-0.508rem);
-	animation-delay: 1s;
 }
 
 .timeline-block:hover .timeline-label{
@@ -192,7 +190,7 @@ section > .row{
 .timeline-label {
 	background: #fff;
 	border-radius: 6.645rem;
-	padding: 0.226rem 0.762rem;
+	padding: 0.226rem;
 	z-index: 5;
 	animation-name: fadeIn;
 	animation-fill-mode: backwards;
@@ -209,29 +207,22 @@ section > .row{
 
 .timeline-mark{
 	position: absolute;
-	left: 45%;
+	left: 49.5%;
+	margin: 0 2%;
 	font-size: 1.313rem;
 	white-space: nowrap;
 }
 
 .timeline-connector{
-	width: 1rem;
-	height: 1rem;
 	position: absolute;
+	width: 5%;
+	height: 2%;
 	bottom: 1rem;
-	left: 45%;
+	left: 50%;
 	border-left-width: 0.25rem;
 	border-left-style: solid;
-	border-radius: 1rem;
-}
-
-.fetch-start .timeline-label,
-.domain-lookup-start .timeline-label,
-.request-start .timeline-label,
-.connect-end .timeline-label,
-.response-end .timeline-label{
-	position: relative;
-	top: -1rem;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
 }
 
 .response-end .timeline-mark{
@@ -239,38 +230,10 @@ section > .row{
 	right: 45%;
 }
 
-.fetch-start .timeline-percent,
-.domain-lookup-start .timeline-percent,
-.request-start .timeline-percent,
-.connect-end .timeline-percent,
-.response-end .timeline-percent{
-	position: relative;
-	top: -1rem;
-	left: 0.508rem;
-}
-
-.response-end .timeline-percent{
-	left: -0.508rem;
-}
-
-.domain-lookup-end .timeline-percent,
-.connect-start .timeline-percent,
-.response-start .timeline-percent{
-	position: relative;
-	bottom: -1rem;
-	left: 0.508rem;
-}
-
-.domain-lookup-end .timeline-label,
-.connect-start .timeline-label,
-.response-start .timeline-label{
-	position: relative;
-	bottom: -1rem;
-}
-
 .fetch-start .timeline-mark{
-	top: -5.375rem;
+	top: -6.5rem;
 }
+
 .fetch-start .timeline-connector{
 	height: 9rem;
 	border-left-color: #0088CC;
@@ -296,7 +259,7 @@ section > .row{
 }
 
 .domain-lookup-end .timeline-mark{
-	top: 8.5rem;
+	top: 9rem;
 }
 
 .domain-lookup-end .timeline-connector{
@@ -311,13 +274,14 @@ section > .row{
 }
 
 .connect-start .timeline-mark{
-	top: 5rem;
+	top: 6rem;
 }
 
 .connect-start .timeline-connector{
 	top: 1rem;
 	height: 6rem;
 	border-left-color: #ED2655;
+	border-top-left-radius: 0;
 	border-bottom: 0.25rem solid #ED2655;
 }
 
@@ -326,8 +290,8 @@ section > .row{
 }
 
 .request-start .timeline-mark{
-	left: 85%;
-	top: -5.375rem;
+	left: 87%;
+	top: -6.375rem;
 	z-index: 2;
 }
 
@@ -335,6 +299,7 @@ section > .row{
 	left: 84%;
 	height: 9rem;
 	border-left-color: #F13C00;
+	border-bottom-left-radius: 0;
 	border-top: 0.25rem solid #ED2655;
 }
 
@@ -353,7 +318,7 @@ section > .row{
 }
 
 .response-start .timeline-mark{
-	top: 5rem;
+	top: 6rem;
 }
 
 .response-start .timeline-connector{
@@ -368,13 +333,17 @@ section > .row{
 }
 
 .response-end .timeline-mark{
+	left: auto;
+	right: 47%;
 }
 
 .response-end .timeline-connector{
 	border-left: 0;
 	left: auto;
-	right: 45%;
+	right: 46%;
 	height: 5.5rem;
+	border-top-left-radius: 0;
+	border-top-right-radius: 1rem;
 	border-right: 0.25rem solid #5F88B0;
 	border-top: 0.25rem solid #5F88B0;
 }
@@ -386,7 +355,7 @@ section > .row{
 .domain-lookup-start .timeline-mark,
 .connect-end .timeline-mark,
 .response-end .timeline-mark{
-	top: -1.953rem;
+	top: -3rem;
 }
 
 .data-group .data-hidden{
