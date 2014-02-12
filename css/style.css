@@ -4,7 +4,17 @@
 	}
 
 	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
 		opacity: 1
+	}
+
+	to {
+		opacity: 0;
+		display: none;
 	}
 }
 
@@ -160,7 +170,7 @@ section > .row{
 	float: left;
 	position: relative;
 	min-height: 4.43rem;
-	transition: 120ms all ease-in-out 20ms;
+	transition: 120ms all ease-in-out 30ms;
 	overflow: visible;
 	margin: 8rem 0;
 	border-radius: 4.43rem;
@@ -169,7 +179,7 @@ section > .row{
 .timeline-block:hover{
 	cursor: help;
 	position: relative;
-	transform: translateY(-0.508rem)
+	transform: translateY(-0.508rem);
 }
 
 .timeline-block:hover .timeline-label{
@@ -179,8 +189,9 @@ section > .row{
 .timeline-label {
 	background: #fff;
 	border-radius: 6.645rem;
-	padding: 0.508rem;
+	padding: 0.508rem 0.259rem;
 	z-index: 5;
+	animation: fadeIn backwards 0.25s;
 }
 
 .timeline-percent {
@@ -194,10 +205,9 @@ section > .row{
 	position: absolute;
 	left: 45%;
 	border-left: 0.25rem solid #222;
-	animation: fadeIn 1s;
+	animation: fadeIn 0.5s;
 	font-size: 1.313rem;
 	white-space: nowrap;
-	border-radius: 1rem;
 }
 
 .fetch-start .timeline-label,
@@ -253,6 +263,7 @@ section > .row{
 	top: -5.375rem;
 	padding-bottom: 6rem;
 	border-left-color: #0088CC;
+	border-top-left-radius: 1rem;
 }
 
 .fetch-start .timeline-percent{
@@ -261,6 +272,8 @@ section > .row{
 
 .domain-lookup-start .timeline-mark{
 	border-left-color: #5B5FFF;
+	z-index: 3;
+	border-top-left-radius: 1rem;
 }
 
 .domain-lookup-start .timeline-percent{
@@ -271,6 +284,7 @@ section > .row{
 	border-left-color: #B82EE5;
 	top: 2rem;
 	padding-top: 6rem;
+	border-bottom-left-radius: 1rem;
 }
 
 .domain-lookup-end .timeline-percent{
@@ -281,6 +295,7 @@ section > .row{
 	top: 2.375rem;
 	padding-top: 2.25rem;
 	border-left-color: #ED2655;
+	border-bottom-left-radius: 1rem;
 }
 
 .connect-start .timeline-percent{
@@ -292,6 +307,8 @@ section > .row{
 	top: -5.375rem;
 	padding-bottom: 6rem;
 	border-left-color: #F13C00;
+	border-top-left-radius: 1rem;
+	z-index: 2;
 }
 
 .request-start .timeline-percent{
@@ -300,6 +317,7 @@ section > .row{
 
 .connect-end .timeline-mark{
 	border-left-color: #D97E00;
+	border-top-left-radius: 1rem;
 }
 
 .connect-end .timeline-percent{
@@ -310,6 +328,7 @@ section > .row{
 	top: 2.375rem;
 	padding-top: 2.25rem;
 	border-left-color: #2CBB0F;
+	border-bottom-left-radius: 1rem;
 }
 
 .response-start .timeline-percent{
@@ -320,6 +339,7 @@ section > .row{
 	border-left: 0;
 	border-right: 0.25rem solid #222;
 	border-right-color: #5F88B0;
+	border-top-right-radius: 1rem;
 }
 
 .response-end .timeline-percent{
@@ -446,7 +466,7 @@ footer{
 	}
 
 	.timeline-label{
-		display: none;
+		animation: fadeOut forwards 0.25s;
 	}
 }
 
