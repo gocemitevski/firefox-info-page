@@ -1,6 +1,6 @@
 @keyframes fadeIn {
 	from {
-		opacity: 0
+		opacity: 0;
 	}
 
 	to {
@@ -9,12 +9,11 @@
 }
 @keyframes fadeOut {
 	from {
-		opacity: 1
+		opacity: 1;
 	}
 
 	to {
 		opacity: 0;
-		display: none;
 	}
 }
 
@@ -180,18 +179,25 @@ section > .row{
 	cursor: help;
 	position: relative;
 	transform: translateY(-0.508rem);
+	animation-delay: 1s;
 }
 
 .timeline-block:hover .timeline-label{
-	display:inline;
+	animation-name: fadeIn;
+	animation-fill-mode: backwards;
+	animation-duration: 0.25s;
+	animation-delay: 200ms;
 }
 
 .timeline-label {
 	background: #fff;
 	border-radius: 6.645rem;
-	padding: 0.508rem 0.259rem;
+	padding: 0.226rem 0.762rem;
 	z-index: 5;
-	animation: fadeIn backwards 0.25s;
+	animation-name: fadeIn;
+	animation-fill-mode: backwards;
+	animation-duration: 0.25s;
+	animation-delay: 200ms;
 }
 
 .timeline-percent {
@@ -204,10 +210,19 @@ section > .row{
 .timeline-mark{
 	position: absolute;
 	left: 45%;
-	border-left: 0.25rem solid #222;
-	animation: fadeIn 0.5s;
 	font-size: 1.313rem;
 	white-space: nowrap;
+}
+
+.timeline-connector{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 45%;
+	border-left-width: 0.25rem;
+	border-left-style: solid;
+	border-radius: 1rem;
 }
 
 .fetch-start .timeline-label,
@@ -217,16 +232,11 @@ section > .row{
 .response-end .timeline-label{
 	position: relative;
 	top: -1rem;
-	left: 0.508rem;
 }
 
 .response-end .timeline-mark{
 	left: auto;
 	right: 45%;
-}
-
-.response-end .timeline-label{
-	left: -0.508rem;
 }
 
 .fetch-start .timeline-percent,
@@ -256,14 +266,15 @@ section > .row{
 .response-start .timeline-label{
 	position: relative;
 	bottom: -1rem;
-	left: 0.508rem;
 }
 
 .fetch-start .timeline-mark{
 	top: -5.375rem;
-	padding-bottom: 6rem;
+}
+.fetch-start .timeline-connector{
+	height: 9rem;
 	border-left-color: #0088CC;
-	border-top-left-radius: 1rem;
+	border-top: 0.25rem solid #0088CC;
 }
 
 .fetch-start .timeline-percent{
@@ -271,9 +282,13 @@ section > .row{
 }
 
 .domain-lookup-start .timeline-mark{
-	border-left-color: #5B5FFF;
 	z-index: 3;
-	border-top-left-radius: 1rem;
+}
+
+.domain-lookup-start .timeline-connector{
+	height: 5.5rem;
+	border-left-color: #5B5FFF;
+	border-top: 0.25rem solid #5B5FFF;
 }
 
 .domain-lookup-start .timeline-percent{
@@ -281,10 +296,14 @@ section > .row{
 }
 
 .domain-lookup-end .timeline-mark{
+	top: 8.5rem;
+}
+
+.domain-lookup-end .timeline-connector{
 	border-left-color: #B82EE5;
-	top: 2rem;
-	padding-top: 6rem;
-	border-bottom-left-radius: 1rem;
+	border-bottom: 0.25rem solid #B82EE5;
+	top: 1rem;
+	height: 9.5rem;
 }
 
 .domain-lookup-end .timeline-percent{
@@ -292,10 +311,14 @@ section > .row{
 }
 
 .connect-start .timeline-mark{
-	top: 2.375rem;
-	padding-top: 2.25rem;
+	top: 5rem;
+}
+
+.connect-start .timeline-connector{
+	top: 1rem;
+	height: 6rem;
 	border-left-color: #ED2655;
-	border-bottom-left-radius: 1rem;
+	border-bottom: 0.25rem solid #ED2655;
 }
 
 .connect-start .timeline-percent{
@@ -305,19 +328,24 @@ section > .row{
 .request-start .timeline-mark{
 	left: 85%;
 	top: -5.375rem;
-	padding-bottom: 6rem;
-	border-left-color: #F13C00;
-	border-top-left-radius: 1rem;
 	z-index: 2;
+}
+
+.request-start .timeline-connector{
+	left: 84%;
+	height: 9rem;
+	border-left-color: #F13C00;
+	border-top: 0.25rem solid #ED2655;
 }
 
 .request-start .timeline-percent{
 	color: #F13C00;
 }
 
-.connect-end .timeline-mark{
+.connect-end .timeline-connector{
 	border-left-color: #D97E00;
-	border-top-left-radius: 1rem;
+	border-top: 0.25rem solid #D97E00;
+	height: 5.5rem;
 }
 
 .connect-end .timeline-percent{
@@ -325,10 +353,14 @@ section > .row{
 }
 
 .response-start .timeline-mark{
-	top: 2.375rem;
-	padding-top: 2.25rem;
+	top: 5rem;
+}
+
+.response-start .timeline-connector{
+	top: 1rem;
+	height: 6rem;
 	border-left-color: #2CBB0F;
-	border-bottom-left-radius: 1rem;
+	border-bottom: 0.25rem solid #2CBB0F;
 }
 
 .response-start .timeline-percent{
@@ -336,10 +368,15 @@ section > .row{
 }
 
 .response-end .timeline-mark{
+}
+
+.response-end .timeline-connector{
 	border-left: 0;
-	border-right: 0.25rem solid #222;
-	border-right-color: #5F88B0;
-	border-top-right-radius: 1rem;
+	left: auto;
+	right: 45%;
+	height: 5.5rem;
+	border-right: 0.25rem solid #5F88B0;
+	border-top: 0.25rem solid #5F88B0;
 }
 
 .response-end .timeline-percent{
@@ -350,7 +387,6 @@ section > .row{
 .connect-end .timeline-mark,
 .response-end .timeline-mark{
 	top: -1.953rem;
-	padding-bottom: 2.25rem;
 }
 
 .data-group .data-hidden{
@@ -466,7 +502,10 @@ footer{
 	}
 
 	.timeline-label{
-		animation: fadeOut forwards 0.25s;
+		animation-name: fadeOut;
+		animation-delay: 200ms;
+		animation-duration: 200ms;
+		animation-fill-mode: forwards;
 	}
 }
 
