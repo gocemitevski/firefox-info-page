@@ -9,264 +9,203 @@
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
-		<div class="data-sections">
+		<header id="headline">
 			<div class="row">
-				<section id="timeline" class="data-group col-lg-12">
-					<div class="row">
-						<header>
-							<h2>Page loaded in <strong>5563</strong> milliseconds</h2>
-							<button type="button" title="See more in Developer Tools > Network">Network</button>
-						</header>
-						<div class="data-timeline">
-							<div title="fetchStart" class="timeline-block fetch-start" style="width:0%; background: #0088CC">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">0%</span>
-									<span class="timeline-label">fetchStart</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="domainLookupStart" class="timeline-block domain-lookup-start" style="width:1%; background: #5B5FFF">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">1%</span>
-									<span class="timeline-label">domainLookupStart</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="domainLookupEnd" class="timeline-block domain-lookup-end" style="width:1%; background: #B82EE5">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">1%</span>
-									<span class="timeline-label">domainLookupEnd</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="connectStart" class="timeline-block connect-start" style="width:2%; background: #ED2655">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">2%</span>
-									<span class="timeline-label">connectStart</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="requestStart" class="timeline-block request-start" style="width:12%; background: #F13C00">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">12%</span>
-									<span class="timeline-label">requestStart</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="connectEnd" class="timeline-block connect-end" style="width:25%; background: #D97E00">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">25%</span>
-									<span class="timeline-label">connectEnd</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="responseStart" class="timeline-block response-start" style="width:30%; background: #2CBB0F">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-percent">30%</span>
-									<span class="timeline-label">responseStart</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-							<div title="responseEnd" class="timeline-block response-end" style="width:29%; background: #5F88B0">
-								<div class="timeline-connector"></div>
-								<div class="timeline-mark">
-									<span class="timeline-label">responseEnd</span>
-									<span class="timeline-percent">29%</span>
-								</div>
-								<div class="timeline-bar"></div>
-							</div>
-						</div>
+				<div class="col-md-8">
+					<!-- Page Title -->
+					<h1>Home of the Mozilla Project</h1>
+					<!-- Meta description -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p>
+						<!-- Page URL -->
+						<a href="#">http://www.mozilla.org/en-US/</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="data-buttons">
+						<button type="button">Refresh</button>
+						<button type="button">Print</button>
+						<button type="button">Export</button>
+						<button type="button">JSON</button>
 					</div>
-				</section>
+				</div>
 			</div>
+		</header>
+		<div class="data-sections">
+			<section id="timeline-alt" class="data-group">
+				<header>
+					<h2><span class="data-group-icon"><img src="img/ff-timeline-icon-16x16.svg" alt="" /></span> Page loaded in <strong>5563</strong> milliseconds</h2>
+				</header>
+				<hr>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">fetchStart</dt>
+					<dd class="tl-item-ms">0 ms</dd>
+					<dd class="tl-item-percent">0%</dd>
+					<dd class="tl-item-bar">
+						<div class="tl-bar-line" style="width: 0%; background: #0088CC"></div>
+					</dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">Request</dt>
+					<dd class="tl-item-ms">10 ms</dd>
+					<dd class="tl-item-percent">1%</dd>
+					<dd class="tl-item-bar">
+						<div class="tl-bar-line" style="width: 1%; background: #5B5FFF"></div>
+					</dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">Response</dt>
+					<dd class="tl-item-ms">10 ms</dd>
+					<dd class="tl-item-percent">1%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 1%; background: #B82EE5; position: relative; left: 1%;"></div></dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">DOM loading</dt>
+					<dd class="tl-item-ms">50 ms</dd>
+					<dd class="tl-item-percent">2%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 2%; background: #ED2655; position: relative; left: 2%;"></div></dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">DOM interactive</dt>
+					<dd class="tl-item-ms">250 ms</dd>
+					<dd class="tl-item-percent">12%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 12%; background: #F13C00; position: relative; left: 4%;"></div></dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">DOM content loaded event</dt>
+					<dd class="tl-item-ms">400 ms</dd>
+					<dd class="tl-item-percent">25%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 25%; background: #D97E00; position: relative; left: 16%;"></div></dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">DOM complete</dt>
+					<dd class="tl-item-ms">600 ms</dd>
+					<dd class="tl-item-percent">30%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 30%; background: #2CBB0F; position: relative; left: 41%;"></div></dd>
+				</dl>
+				<dl class="row tl-item">
+					<dt class="tl-item-name">DOM load event</dt>
+					<dd class="tl-item-ms">600 ms</dd>
+					<dd class="tl-item-percent">29%</dd>
+					<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 29%; background: #5F88B0; position: relative; left: 71%;"></div></dd>
+				</dl>
+			</section>
 			<div class="row">
-				<section id="general" class="data-group col-lg-3">
-					<header>
-						<figure>
-							<span class="glyphicon glyphicon-encoding"></span>
-						</figure>
-						<h2>General</h2>
-					</header>
-					<div class="row">
-						<div class="data-group col-xs-12">
-							<div class="row">
-								<div class="col-xs-8">
-									Encoding
-								</div>
-								<div class="col-xs-4">
-									UTF-8
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Meta Nodes
-								</div>
-								<div class="col-xs-4">
-									5
-								</div>
-							</div>
-							<div class="row alert-success">
-								<div class="col-xs-8">
-									Plug-ins
-								</div>
-								<div class="col-xs-4">
-									0
-								</div>
+				<div class="col-lg-3">
+					<section id="general" class="data-group">
+						<header>
+							<h2><span class="data-group-icon"><img src="img/ff-general-icon-16x16.svg" alt="" /></span> General</h2>
+						</header>
+						<hr>
+						<div class="row">
+							<div class="data-group">
+								<dl class="row">
+									<dt class="col-xs-8">Encoding</dt>
+									<dd class="col-xs-4">UTF-8</dd>
+								</dl>
+								<dl class="row">
+									<dt class="col-xs-8">Meta Nodes</dt>
+									<dd class="col-xs-4">5</dd>
+								</dl>
+								<dl class="row alert-success">
+									<dt class="col-xs-8">Plug-ins</dt>
+									<dd class="col-xs-4">0</dd>
+								</dl>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section id="page-resources" class="data-group col-lg-3">
-					<header>
-						<figure>
-							<span class="glyphicon glyphicon-file"></span>
-						</figure>
-						<h2>Resources</h2>
-						<button type="button" title="See more in Developer Tools > Style Editor">Style Editor</button>
-					</header>
-					<div class="row">
-						<div class="data-group col-xs-12">
-							<div class="row">
-								<div class="col-xs-8">
-									Number of Stylesheets
-								</div>
-								<div class="col-xs-4">
-									<a href="#">5</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Number of Scripts
-								</div>
-								<div class="col-xs-4">
-									<a href="#">32</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Number of Fonts
-								</div>
-								<div class="col-xs-4">
-									<a href="#">6</a>
-								</div>
-							</div>
-							<div class="row alert-danger">
-								<div class="col-xs-8">
-									Number of iframes
-								</div>
-								<div class="col-xs-4">
-									15
-								</div>
+					</section>
+				</div>
+				<div class="col-lg-3">
+					<section id="page-resources" class="data-group">
+						<header>
+							<h2><span class="data-group-icon"><img src="img/ff-resources-icon-16x16.svg" alt="" /></span> Resources</h2>
+						</header>
+						<hr>
+						<div class="row">
+							<div class="data-group">
+								<dl class="row">
+									<dt class="col-xs-8">Number of Stylesheets</dt>
+									<dd class="col-xs-4"><a href="#">5</a></dd>
+								</dl>
+								<dl class="row">
+									<dt class="col-xs-8">Number of Scripts</dt>
+									<dd class="col-xs-4"><a href="#">32</a></dd>
+								</dl>
+								<dl class="row">
+									<dt class="col-xs-8">Number of Fonts</dt>
+									<dd class="col-xs-4"><a href="#">6</a></dd>
+								</dl>
+								<dl class="row alert-danger">
+									<dt class="col-xs-8">Number of iframes</dt>
+									<dd class="col-xs-4">15</dd>
+								</dl>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section id="security" class="data-group col-lg-3">
-					<header>
-						<figure>
-							<span class="glyphicon glyphicon-lock"></span>
-						</figure>
-						<h2>Security</h2>
-					</header>
-					<div class="row">
-						<div class="data-group col-xs-12">
-							<div class="row alert-success">
-								<div class="col-xs-8">
-									SSL Encryption
-								</div>
-								<div class="col-xs-4">
-									On
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Encryption Strength
-								</div>
-								<div class="col-xs-4">
-									128-bit
-								</div>
-							</div>
-							<div class="row alert-success">
-								<div class="col-xs-8">
-									Domain Trust
-								</div>
-								<div class="col-xs-4">
-									Trusted
-								</div>
-							</div>
-							<div class="row alert-danger">
-								<div class="col-xs-8">
-									SSL Certificate Validity
-								</div>
-								<div class="col-xs-4">
-									Expired
-								</div>
-							</div>
-							<div class="row alert-success">
-								<div class="col-xs-8">
-									Mixed Content
-								</div>
-								<div class="col-xs-4">
-									None
-								</div>
+					</section>
+				</div>
+				<div class="col-lg-3">
+					<section id="security" class="data-group">
+						<header>
+							<h2><span class="data-group-icon"><img src="img/ff-security-icon-16x16.svg" alt="" /></span> Security</h2>
+						</header>
+						<hr>
+						<div class="row">
+							<div class="data-group">
+								<dl class="row alert-success">
+									<dt class="col-xs-8">SSL Encryption</dt>
+									<dd class="col-xs-4">On</dd>
+								</dl>
+								<dl class="row">
+									<dt class="col-xs-8">Encryption Strength</dt>
+									<dd class="col-xs-4">128-bit</dd>
+								</dl>
+								<dl class="row alert-success">
+									<dt class="col-xs-8">Domain Trust</dt>
+									<dd class="col-xs-4">Trusted</dd>
+								</dl>
+								<dl class="row alert-danger">
+									<dt class="col-xs-8">SSL Certificate Validity</dt>
+									<dd class="col-xs-4">Expired</dd>
+								</dl>
+								<dl class="row alert-success">
+									<dt class="col-xs-8">Mixed Content</dt>
+									<dd class="col-xs-4">None</dd>
+								</dl>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section id="troubleshooting" class="data-group col-lg-3">
-					<header>
-						<figure>
-							<span class="glyphicon glyphicon-exclamation-sign"></span>
-						</figure>
-						<h2>Troubleshooting</h2>
-						<button type="button" title="See more in Developer Tools > Web Console">Web Console</button>
-					</header>
-					<div class="row">
-						<div class="data-group col-xs-12">
-							<div class="row alert-danger">
-								<div class="col-xs-8">
-									Errors
-								</div>
-								<div class="col-xs-4">
-									<a href="#">325</a>
-								</div>
-							</div>
-							<div class="row alert-warning">
-								<div class="col-xs-8">
-									Warnings
-								</div>
-								<div class="col-xs-4">
-									<a href="#">15</a>
-								</div>
-							</div>
-							<div class="row alert-success">
-								<div class="col-xs-8">
-									Quirks Mode
-								</div>
-								<div class="col-xs-4">
-									Off
-								</div>
+					</section>
+				</div>
+				<div class="col-lg-3">
+					<section id="troubleshooting" class="data-group">
+						<header>
+							<h2><span class="data-group-icon"><img src="img/ff-troubleshooting-icon-16x16.svg" alt="" /></span> Troubleshooting</h2>
+						</header>
+						<hr>
+						<div class="row">
+							<div class="data-group">
+								<dl class="row alert-danger">
+									<dt class="col-xs-8">Errors</dt>
+									<dd class="col-xs-4"><a href="#">325</a></dd>
+								</dl>
+								<dl class="row alert-warning">
+									<dt class="col-xs-8">Warnings</dt>
+									<dd class="col-xs-4"><a href="#">15</a></dd>
+								</dl>
+								<dl class="row alert-success">
+									<dt class="col-xs-8">Quirks Mode</dt>
+									<dd class="col-xs-4">Off</dd>
+								</dl>
 							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 			<div class="row">
 				<section id="display" class="data-group col-md-6">
 					<header>
-						<figure>
-							<span class="glyphicon glyphicon-adjust"></span>
-						</figure>
-						<h2>Display</h2>
-						<button type="button" title="See more in Developer Tools > Tool Name">Tool Name</button>
+						<h2><span class="data-group-icon"><img src="img/ff-display-icon-16x16.svg" alt="" /></span> Display</h2>
 					</header>
+					<hr>
 					<div class="row">
 						<div class="data-group col-sm-6">
 							<div class="visual-box">
@@ -276,7 +215,6 @@
 									<div class="data-group">
 										<dl>
 											<dt>Page Height</dt>
-											<!--<dd>Height of the page</dd>-->
 											<dd>2721px</dd>
 										</dl>
 									</div>
@@ -285,54 +223,46 @@
 									<div class="data-group">
 										<dl>
 											<dt>Page Width</dt>
-											<!--<dd>Width of the page</dd>-->
 											<dd>1211px</dd>
 										</dl>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="data-group col-sm-6">
-							<div>8 Colors on Page</div>
-							<div class="color-swatches">
-								<span style="background: #2D1152"></span>
-								<span style="background: #D2D0CE"></span>
-								<span style="background: #AAB0EA"></span>
-								<span style="background: #500095"></span>
-								<span style="background: #020202"></span>
-								<span style="background: #422C15"></span>
-								<span style="background: #CBB3C1"></span>
-								<span style="background: #D2D0CE"></span>
+						<div class="col-sm-6">
+							<div class="data-group">
+								<dl>
+									<dt>8 Colors on Page</dt>
+									<dd class="color-swatches">
+										<span style="background: #2D1152"><span class="hidden">#2D1152</span></span>
+										<span style="background: #D2D0CE"><span class="hidden">#D2D0CE</span></span>
+										<span style="background: #AAB0EA"><span class="hidden">#AAB0EA</span></span>
+										<span style="background: #500095"><span class="hidden">#500095</span></span>
+										<span style="background: #020202"><span class="hidden">#020202</span></span>
+										<span style="background: #422C15"><span class="hidden">#422C15</span></span>
+										<span style="background: #CBB3C1"><span class="hidden">#CBB3C1</span></span>
+										<span style="background: #D2D0CE"><span class="hidden">#D2D0CE</span></span>
+									</dd>
+								</dl>
+							</div>
+							<div class="data-group">
+								<dl class="row">
+									<dt class="col-xs-8">CSS Pixels</dt>
+									<dd class="col-xs-4">2</dd>
+								</dl>
+								<dl class="row">
+									<dt class="col-xs-8">Display DPI</dt>
+									<dd class="col-xs-4">221</dd>
+								</dl>
 							</div>
 						</div>
-						<div class="data-group col-sm-6">
-							<div class="row">
-								<div class="col-xs-8">
-									CSS Pixels
-								</div>
-								<div class="col-xs-4">
-									2
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Display DPI
-								</div>
-								<div class="col-xs-4">
-									221
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</section>
 				<section id="viewport" class="data-group col-md-6">
 					<header>
-						<figure>
-							<span class="glyphicon glyphicon-eye-open"></span>
-						</figure>
-						<h2>Viewport</h2>
+						<h2><span class="data-group-icon"><img src="img/ff-viewport-icon-16x16.svg" alt="" /></span> Viewport</h2>
 					</header>
+					<hr>
 					<div class="row">
 						<div class="data-group col-sm-6">
 							<div class="visual-box">
@@ -342,7 +272,6 @@
 									<div class="data-group">
 										<dl>
 											<dt>Viewport Width</dt>
-											<!--<dd>Width of the viewport</dd>-->
 											<dd>980px</dd>
 										</dl>
 									</div>
@@ -351,7 +280,6 @@
 									<div class="data-group">
 										<dl>
 											<dt>Viewport Height</dt>
-											<!--<dd>Height of the viewport</dd>-->
 											<dd>620px</dd>
 										</dl>
 									</div>
@@ -359,54 +287,34 @@
 							</div>
 						</div>
 						<div class="data-group col-sm-6">
-							<div class="row">
-								<div class="col-xs-8">
-									Auto Size
-								</div>
-								<div class="col-xs-4">
-									Off
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Zoomable
-								</div>
-								<div class="col-xs-4">
-									Yes
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Minimum Zoom
-								</div>
-								<div class="col-xs-4">
-									0
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-8">
-									Maximum Zoom
-								</div>
-								<div class="col-xs-4">
-									20
-								</div>
-							</div>
+							<dl class="row">
+								<dt class="col-xs-8">Auto Size</dt>
+								<dd class="col-xs-4">Off</dd>
+							</dl>
+							<dl class="row">
+								<dt class="col-xs-8">Zoomable</dt>
+								<dd class="col-xs-4">Yes</dd>
+							</dl>
+							<dl class="row">
+								<dt class="col-xs-8">Minimum Zoom</dt>
+								<dd class="col-xs-4">0</dd>
+							</dl>
+							<dl class="row">
+								<dt class="col-xs-8">Maximum Zoom</dt>
+								<dd class="col-xs-4">20</dd>
+							</dl>
 						</div>
 					</div>
 				</section>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<footer class="data-group">
-						<p>Firefox page info report for: <strong>"Page Title Here"</strong></p>
-						<p><span class="glyphicon glyphicon-globe"></span> <a href="#">http://www.website.com/</a></p>
-						<div class="data-buttons">
-							<button type="button">Refresh</button>
-							<button type="button">Export</button>
-						</div>
-					</footer>
-				</div>
-			</div>
+			<hr class="hidden">
 		</div>
+		<footer class="data-group">
+			<ul class="list-unstyled list-inline">
+				<li>Generated with <a href="#">Mozilla Firefox</a>.</li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</footer>
 	</body>
 </html>
