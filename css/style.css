@@ -294,6 +294,10 @@ footer{
 		min-width: 100%;
 		margin: 0.262rem 0 1.5rem;
 	}
+
+	#timeline-alt{
+		margin-bottom: 0;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
