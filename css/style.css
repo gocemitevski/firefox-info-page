@@ -42,6 +42,10 @@ a:active{
 	margin-bottom: 0.508rem;
 }
 
+.data-group .row .row{
+	margin-bottom: 0.762rem;
+}
+
 .data-group dt,
 .data-group dd{
 	font-weight: inherit;
@@ -115,7 +119,10 @@ section > .row{
 }
 
 #timeline-alt{
-	margin-bottom: 2rem;
+	margin-bottom: 0;
+	background: #fcfcfc;
+	padding: 1rem 1.5rem 2rem;
+	border-bottom: 1px solid #ddd;
 }
 .tl-item dt{
 	font-weight: bold;
@@ -148,7 +155,7 @@ section > .row{
 	width: 74%;
 	border: 1px solid #ddd;
 	border-radius: 1rem;
-	background: #F7F7F7;
+	background: #fff;
 }
 
 .tl-bar-line{
@@ -169,6 +176,18 @@ section > .row{
 #headline h1{
 	font-size: 2.953rem;
 	color: #292E33;
+}
+
+.status-ok{
+	color: rgba(44, 187, 15, 1);
+}
+
+.status-bad{
+	color: rgba(241, 60, 0, 1);
+}
+
+.status-warn{
+	color: rgba(217, 126, 0, 1);
 }
 
 .data-group .data-hidden{
