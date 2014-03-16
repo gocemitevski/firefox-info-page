@@ -105,7 +105,7 @@ a:active{
 	font-size: 1.313rem;
 }
 .data-sections{
-	padding: 1rem 15px 2rem; /* Required for Bootstrap */
+	padding: 1rem 15px; /* Required for Bootstrap */
 }
 .data-sections h2{
 	font-size: 1.969rem;
