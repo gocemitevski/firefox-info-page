@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Sans, sans-serif;
 	color: #667380;
 }
 
@@ -21,7 +21,15 @@ a:active{
 	color: #8FA1B3;
 }
 
-.color-swatches{
+.data-group dl{
+	margin: 0.762rem -0.508rem;
+}
+
+.data-group .row.color-swatches{
+	margin-bottom: 2rem;
+}
+
+.color-swatches dd{
 	margin-top: 1rem;
 }
 .color-swatches span{
@@ -32,19 +40,18 @@ a:active{
 	margin: 0 0.198rem 0.198rem 0;
 }
 
+.data-group{
+	margin-bottom: 2rem;
+}
 .data-group .col-xs-4{
 	text-align: right;
 	font-weight: bold;
 }
 
-.data-group .row{
-	margin-top: 0.226rem;
-	margin-bottom: 0.508rem;
-}
-
-.data-group .row .row{
-	margin-bottom: 0.762rem;
-}
+/*.data-group .row{
+	margin-top: 0.667rem;
+	margin-bottom: 0.667rem;
+}*/
 
 .data-group dt,
 .data-group dd{
@@ -66,11 +73,6 @@ a:active{
 	display: inline-block;
 	/*line-height: 150%;*/
 }
-
-/*.data-group figure {
-    float: left;
-    width: 2.571rem;
-}*/
 
 .data-group-icon{
 	display: inline-block;
@@ -105,14 +107,6 @@ a:active{
 .data-sections{
 	padding: 1rem 15px 2rem; /* Required for Bootstrap */
 }
-section > .row > .data-group{
-	padding-top: 0.226rem;
-	padding-bottom: 0.508rem;
-}
-section > .row{
-	padding-right: 2.25rem;
-	padding-left: 2.25rem;
-}
 .data-sections h2{
 	font-size: 1.969rem;
 	font-weight: 400;
@@ -121,9 +115,26 @@ section > .row{
 #timeline-alt{
 	margin-bottom: 0;
 	background: #fcfcfc;
-	padding: 1rem 1.5rem 2rem;
+	padding: 2rem 2.25rem;
 	border-bottom: 1px solid #ddd;
 }
+
+#timeline-alt .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#timeline-alt h2{
+	margin: 0.508rem 0 0;
+	font-size: 1.969rem;
+	font-weight: 400;
+	line-height: inherit;
+}
+
+#timeline-alt dl{
+	margin: 0.508rem 0;
+}
+
 .tl-item dt{
 	font-weight: bold;
 }
@@ -190,7 +201,7 @@ section > .row{
 	color: rgba(217, 126, 0, 1);
 }
 
-.data-group .data-hidden{
+/*.data-group .data-hidden{
 	display: none;
 	padding: 1rem 1.5rem 1.5rem;
 	margin: 1rem 0;
@@ -198,7 +209,7 @@ section > .row{
 	border: 0.296rem solid #EBECED;
 	border-top: 0;
 	border-left: 0;
-}
+}*/
 
 .data-hidden dd:before{
 	content:'- ';
@@ -212,8 +223,8 @@ section > .row{
 
 .visual-box{
 	text-shadow: 0 -1px #fff;
-	max-width: 92%;
-	margin: 1.313rem 0 1rem;
+	max-width: 96%;
+	margin: 1.313rem 2% 2.571rem;
 	position: relative;
 	background: #F7F7F7;
 	min-height: 25.629rem;
@@ -234,13 +245,13 @@ section > .row{
 	font-weight: bold;
 	font-size: 2rem;
 }
-.v-b-width .data-group{
+.v-b-width dl{
 	position: absolute;
 	left: 1.5rem;
 	top: 1.5rem;
 	text-align: left;
 }
-.v-b-height .data-group{
+.v-b-height dl{
 	position: absolute;
 	right: 1.5rem;
 	bottom: 1.5rem;
@@ -289,7 +300,11 @@ footer{
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
 	.visual-box{
-		max-width: 98%
+		/*max-width: 96%;*/
+		min-width: 200px;
+		min-height: 250px;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
 }
 
