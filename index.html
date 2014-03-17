@@ -4,9 +4,9 @@
 		<title>Firefox Page Info</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
 		<!--<link href="css/fonts.css" rel="stylesheet" media="screen">-->
-		<link href="css/style.css" rel="stylesheet" media="screen">
+		<link href="css/style.css" rel="stylesheet" media="all">
 	</head>
 	<body>
 		<header id="headline">
@@ -35,13 +35,12 @@
 			<header>
 				<h2><span class="data-group-icon"><img src="img/ff-timeline-icon-16x16.svg" alt="" /></span> Page loaded in <strong>5563</strong> milliseconds</h2>
 			</header>
-			<hr>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">fetchStart</dt>
 				<dd class="tl-item-ms">0 ms</dd>
 				<dd class="tl-item-percent">0%</dd>
 				<dd class="tl-item-bar">
-					<div class="tl-bar-line" style="width: 0%; background: #0088CC"></div>
+					<div class="tl-bar-line ff-lt-blue-bg" style="width: 0%;"></div>
 				</dd>
 			</dl>
 			<dl class="row tl-item">
@@ -49,44 +48,56 @@
 				<dd class="tl-item-ms">10 ms</dd>
 				<dd class="tl-item-percent">1%</dd>
 				<dd class="tl-item-bar">
-					<div class="tl-bar-line" style="width: 1%; background: #5B5FFF"></div>
+					<div class="tl-bar-line ff-lt-violet-bg" style="width: 1%;"></div>
 				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">Response</dt>
 				<dd class="tl-item-ms">10 ms</dd>
 				<dd class="tl-item-percent">1%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 1%; background: #B82EE5; position: relative; left: 1%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-pink-violet-bg" style="width: 1%; position: relative; left: 1%;"></div>
+				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">DOM loading</dt>
 				<dd class="tl-item-ms">50 ms</dd>
 				<dd class="tl-item-percent">2%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 2%; background: #ED2655; position: relative; left: 2%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-pink-bg" style="width: 2%; position: relative; left: 2%;"></div>
+				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">DOM interactive</dt>
 				<dd class="tl-item-ms">250 ms</dd>
 				<dd class="tl-item-percent">12%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 12%; background: #F13C00; position: relative; left: 4%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-orange-bg" style="width: 12%; position: relative; left: 4%;"></div>
+				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">DOM content loaded event</dt>
 				<dd class="tl-item-ms">400 ms</dd>
 				<dd class="tl-item-percent">25%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 25%; background: #D97E00; position: relative; left: 16%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-yellow-bg" style="width: 25%; position: relative; left: 16%;"></div>
+				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">DOM complete</dt>
 				<dd class="tl-item-ms">600 ms</dd>
 				<dd class="tl-item-percent">30%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 30%; background: #2CBB0F; position: relative; left: 41%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-green-bg" style="width: 30%; position: relative; left: 41%;"></div>
+				</dd>
 			</dl>
 			<dl class="row tl-item">
 				<dt class="tl-item-name">DOM load event</dt>
 				<dd class="tl-item-ms">600 ms</dd>
 				<dd class="tl-item-percent">29%</dd>
-				<dd class="tl-item-bar"><div class="tl-bar-line" style="width: 29%; background: #5F88B0; position: relative; left: 71%;"></div></dd>
+				<dd class="tl-item-bar">
+					<div class="tl-bar-line ff-lt-pale-blue-bg" style="width: 29%; position: relative; left: 71%;"></div>
+				</dd>
 			</dl>
 		</section>
 		<div class="data-sections">
@@ -98,7 +109,6 @@
 								<header>
 									<h2><span class="data-group-icon"><img src="img/ff-general-icon-16x16.svg" alt="" /></span> General</h2>
 								</header>
-								<hr>
 								<dl class="row">
 									<dt class="col-xs-8">Encoding</dt>
 									<dd class="col-xs-4">UTF-8</dd>
@@ -118,7 +128,6 @@
 								<header>
 									<h2><span class="data-group-icon"><img src="img/ff-resources-icon-16x16.svg" alt="" /></span> Resources</h2>
 								</header>
-								<hr>
 								<dl class="row">
 									<dt class="col-xs-8">Number of Stylesheets</dt>
 									<dd class="col-xs-4"><a href="#">5</a></dd>
@@ -146,7 +155,6 @@
 								<header>
 									<h2><span class="data-group-icon"><img src="img/ff-security-icon-16x16.svg" alt="" /></span> Security</h2>
 								</header>
-								<hr>
 								<dl class="row status-ok">
 									<dt class="col-xs-8">SSL Encryption</dt>
 									<dd class="col-xs-4">On</dd>
@@ -174,7 +182,6 @@
 								<header>
 									<h2><span class="data-group-icon"><img src="img/ff-troubleshooting-icon-16x16.svg" alt="" /></span> Troubleshooting</h2>
 								</header>
-								<hr>
 								<dl class="row status-bad">
 									<dt class="col-xs-8">Errors</dt>
 									<dd class="col-xs-4"><a href="#">325</a></dd>
@@ -198,7 +205,6 @@
 						<header>
 							<h2><span class="data-group-icon"><img src="img/ff-display-icon-16x16.svg" alt="" /></span> Display</h2>
 						</header>
-						<hr>
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="visual-box">
@@ -249,7 +255,6 @@
 						<header>
 							<h2><span class="data-group-icon"><img src="img/ff-viewport-icon-16x16.svg" alt="" /></span> Viewport</h2>
 						</header>
-						<hr>
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="visual-box">
@@ -291,7 +296,6 @@
 					</section>
 				</div>
 			</div>
-			<hr class="hidden">
 		</div>
 		<footer>
 			<ul class="list-unstyled list-inline">
