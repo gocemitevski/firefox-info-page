@@ -128,23 +128,23 @@ a:active{
 	font-weight: 400;
 }
 
-#timeline-alt{
+#timeline{
 	margin-bottom: 0;
 	background: #fcfcfc;
 	padding: 2rem 2.25rem;
 	border-bottom: 0.1rem solid #ddd;
 }
 
-#timeline-alt .row{
+#timeline .row{
 	margin-left: 0;
 	margin-right: 0;
 }
 
-#timeline-alt header{
+#timeline header{
 	border-bottom: 0.1rem solid #ddd;
 	margin-bottom: 2.25rem;
 }
-#timeline-alt h2{
+#timeline h2{
 	margin: 0.508rem 0 2rem;
 	font-size: 1.969rem;
 	font-weight: 400;
@@ -152,7 +152,7 @@ a:active{
 
 }
 
-#timeline-alt dl{
+#timeline dl{
 	margin: 0.508rem 0;
 }
 
@@ -337,7 +337,7 @@ footer{
 		margin: 0.262rem 0 1.5rem;
 	}
 
-	#timeline-alt{
+	#timeline{
 		margin-bottom: 0;
 	}
 }
@@ -360,8 +360,8 @@ footer{
 	}
 
 	#headline,
-	#timeline-alt,
-	#timeline-alt header,
+	#timeline,
+	#timeline header,
 	.data-group header{
 		border-bottom-width: 0.2rem;
 	}
@@ -374,7 +374,7 @@ footer{
 		border: 0.1rem solid black;
 	}
 
-	#timeline-alt{
+	#timeline{
 		page-break-after: always;
 	}
 
